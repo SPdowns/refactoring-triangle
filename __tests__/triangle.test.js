@@ -27,4 +27,8 @@ describe('Triangle', () => {
     const equilTriangle = new Triangle(6,6,6)
     expect(equilTriangle.checkType()).toEqual("equilateral triangle")
   })
+  test('should correctly determine whether a NaN is inputted by the user', ()=> {
+    const nanTriangle = new Triangle(NaN,5,6)
+    expect(nanTriangle.checkType()).toEqual("Words Only")
+  })
 });
