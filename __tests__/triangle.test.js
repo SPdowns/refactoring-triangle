@@ -41,4 +41,3 @@ describe('Triangle', () => {
     const nanTriangle = new Triangle(NaN,5,6)
     expect(nanTriangle.checkType()).toEqual("Words Only")
   })
-});
